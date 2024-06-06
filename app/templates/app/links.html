@@ -1,0 +1,18 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+
+<div class="resources">
+    <!-- Здесь будет ваша надпись -->
+    <h2>Полезные ресурсы:</h2>
+
+    <!-- Ваши текущие ссылки останутся без изменений -->
+    <a href="https://youtube.com/" target="_blank"> <img src="{% static 'app/content/YouTube.png' %}" alt="YouTube" style="width: 100px;" /></a>
+    <a href="https://rutube.ru/" target="_blank"> <img src="{% static 'app/content/rutube.jpg' %}" alt="RuTube" style="width: 100px;" /></a>
+    <a href="https://www.twitch.tv/" target="_blank"> <img src="{% static 'app/content/twitch.jpg' %}" alt="Twitch" style="width: 100px;" /></a>
+</div>
+
+{% endblock %}
